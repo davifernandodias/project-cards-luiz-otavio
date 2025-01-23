@@ -21,7 +21,7 @@ function App( ) {
   }, [postPorPage]);
 
   useEffect(() => {
-    const postFilterWithSearchValue = posts.filter((el) => el.title.includes(searchInputValue.toLowerCase()));
+    const postFilterWithSearchValue = posts.filter((el : any) => el.title.includes(searchInputValue.toLowerCase()));
     
     setFilterPosts(postFilterWithSearchValue);
   // eslint-disable-next-line react-hooks/exhaustive-deps
